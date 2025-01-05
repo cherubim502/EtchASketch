@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="header">
+    <div id="header" class="center">
         <h1>Etch-a-Sketch</h1>
     </div>
-    <div id="body">
-        <div id="config">
+    <div id="body" style="display: flex; flex-direction: column; align-content: center; justify-content: center; align-items: center;">
+        <div id="config" style="text-align: center;">
+            <div>Cells per Row:</div>
+            <input id="cellcount"/>
             <button id="createbutton" onclick="createCanvas()">Create Canvas</button>
         </div>
-        <div id="canvas" class="canvas">
+        <div>
+            <div id="canvas" class="canvas"></div>
         </div>
     </div>
 </body>
